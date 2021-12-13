@@ -43,11 +43,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </dl>
               <div>
                 <PageTitle>{title}</PageTitle>
-                <div>
-                  {tags.map((tag) => (
-                    <Tag key={tag} text={tag} />
-                  ))}
-                </div>
               </div>
             </div>
           </header>
@@ -56,6 +51,17 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <div className="pt-4 xl:pt-8">
+              <div className="py-4 xl:py-8">
+                <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                  Tags
+                </h2>
+                <div className="flex flex-wrap">
+                  {tags.map((tag) => (
+                    <Tag key={tag} text={tag} />
+                  ))}
+                </div>
+              </div>
+
               <Link
                 href="/blog"
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
