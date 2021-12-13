@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Mírian Batista',
   author: 'Mírian Batista',
-  headerTitle: '',
+  headerTitle: 'Mírian Batista',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
