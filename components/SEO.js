@@ -117,7 +117,7 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, ima
       name: siteMetadata.author,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
+        url: `${siteMetadata.siteUrl}`,
       },
     },
     description: summary,
